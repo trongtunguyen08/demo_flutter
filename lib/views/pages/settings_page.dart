@@ -41,6 +41,18 @@ class _SettingsPageState extends State<SettingsPage> {
                 );
               },
             ),
+            ElevatedButton(
+              onPressed: () {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: const Text("Snackbar"),
+                    showCloseIcon: true,
+                    behavior: SnackBarBehavior.floating,
+                  ),
+                );
+              },
+              child: const Text("Show Snackbar"),
+            ),
           ],
         ),
       ),
