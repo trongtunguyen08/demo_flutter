@@ -9,7 +9,27 @@ class SearchPage extends StatelessWidget {
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.all(20.0),
-        child: Column(children: [HeroWidget()]),
+        child: Column(
+          children: [
+            HeroWidget(),
+            Container(
+              width: double.infinity,
+              padding: EdgeInsets.symmetric(vertical: 10.0),
+              child: Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text("Title"),
+                      const Text("The description of this"),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
