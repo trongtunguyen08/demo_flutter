@@ -1,3 +1,4 @@
+import 'package:demo_flutter/data/constants.dart';
 import 'package:demo_flutter/views/widgets/hero_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -21,8 +22,11 @@ class SearchPage extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text("Title"),
-                      const Text("The description of this"),
+                      const Text("Title", style: KTextStyle.titleTealText),
+                      const Text(
+                        "The description of this",
+                        style: KTextStyle.descriptionText,
+                      ),
                     ],
                   ),
                 ),
