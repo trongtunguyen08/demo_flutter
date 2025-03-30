@@ -53,6 +53,28 @@ class _SettingsPageState extends State<SettingsPage> {
               },
               child: const Text("Show Snackbar"),
             ),
+            ElevatedButton(
+              onPressed: () {
+                showDialog(
+                  context: context,
+                  builder: (context) {
+                    return AlertDialog(
+                      title: const Text("Title"),
+                      content: const Text("Content here"),
+                      actions: [
+                        FilledButton(
+                          onPressed: () {
+                            Navigator.pop(context);
+                          },
+                          child: const Text("Close"),
+                        ),
+                      ],
+                    );
+                  },
+                );
+              },
+              child: const Text("Show Alert Dialog"),
+            ),
           ],
         ),
       ),
