@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class ProfilePage extends StatefulWidget {
@@ -68,8 +69,23 @@ class _ProfilePageState extends State<ProfilePage> {
             GestureDetector(
               child: Image.asset("assets/images/bg.jpg"),
               onTap: () {
-                print("Image selected");
+                if (kDebugMode) {
+                  print("Image selected");
+                }
               },
+            ),
+            InkWell(
+              splashColor: Colors.teal,
+              onTap: () {
+                if (kDebugMode) {
+                  print("Image selected");
+                }
+              },
+              child: Container(
+                height: 200.0,
+                width: double.infinity,
+                color: Colors.white12,
+              ),
             ),
           ],
         ),
