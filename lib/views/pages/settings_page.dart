@@ -1,3 +1,4 @@
+import 'package:demo_flutter/views/pages/welcome_page.dart';
 import 'package:flutter/material.dart';
 
 class SettingsPage extends StatefulWidget {
@@ -23,7 +24,26 @@ class _SettingsPageState extends State<SettingsPage> {
           },
         ),
       ),
-      body: Center(child: Column(children: [const Text("Settings page")])),
+      body: Padding(
+        padding: EdgeInsets.all(20.0),
+        child: Column(
+          children: [
+            ListTile(
+              title: const Text("Logout"),
+              onTap: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return WelcomePage();
+                    },
+                  ),
+                );
+              },
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
