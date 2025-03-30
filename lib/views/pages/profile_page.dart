@@ -87,6 +87,49 @@ class _ProfilePageState extends State<ProfilePage> {
                 color: Colors.white12,
               ),
             ),
+            ElevatedButton(
+              onPressed: () {
+                if (kDebugMode) {
+                  print("Button pressed!");
+                }
+              },
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.teal),
+              child: const Text("Press Me"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                if (kDebugMode) {
+                  print("Button pressed!");
+                }
+              },
+              child: const Text("Press Me"),
+            ),
+            FilledButton(
+              onPressed: () {
+                if (kDebugMode) {
+                  print("Button pressed!");
+                }
+              },
+              child: const Text("Press Me"),
+            ),
+            TextButton(
+              onPressed: () {
+                if (kDebugMode) {
+                  print("Button pressed!");
+                }
+              },
+              child: const Text("Press Me"),
+            ),
+            OutlinedButton(
+              onPressed: () {
+                if (kDebugMode) {
+                  print("Button pressed!");
+                }
+              },
+              child: const Text("Press Me"),
+            ),
+            CloseButton(),
+            BackButton(),
           ],
         ),
       ),
