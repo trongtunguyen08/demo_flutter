@@ -12,7 +12,7 @@ class SearchPage extends StatelessWidget {
         padding: const EdgeInsets.all(20.0),
         child: Column(
           children: [
-            HeroWidget(),
+            HeroWidget(title: "Search"),
             Container(
               width: double.infinity,
               padding: EdgeInsets.symmetric(vertical: 10.0),
