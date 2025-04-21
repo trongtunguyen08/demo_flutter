@@ -28,6 +28,10 @@ class _SettingsPageState extends State<SettingsPage> {
         padding: EdgeInsets.all(20.0),
         child: Column(
           children: [
+            CircleAvatar(
+              backgroundImage: AssetImage("assets/images/bg.jpg"),
+              radius: 50.0,
+            ),
             ListTile(
               title: const Text("Logout"),
               onTap: () {
